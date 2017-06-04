@@ -15,6 +15,9 @@ require('bootstrap-less')
 require('admin-lte')
 window.toastr = require('toastr')
 require('icheck')
+require('moment')
+requrie('jquery-ui')
+requrie('fullCalendar')
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
