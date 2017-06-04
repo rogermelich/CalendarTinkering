@@ -16,7 +16,20 @@ window.Vue = require('vue');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('full-calendar', require('./components/calendar/FullCalendar.vue'))
+Vue.component('calendar-events', require('./components/calendar/CalendarEvents.vue'))
+Vue.component('calendar', require('./components/calendar/Calendar.vue'))
+
+import Multiselect from 'vue-multiselect'
+
+Vue.component(Multiselect)
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data() {
+        return {
+            value: null,
+            options: ['list','of','values']
+        }
+    }
 });
